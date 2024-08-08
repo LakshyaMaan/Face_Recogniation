@@ -28,15 +28,15 @@ while True:
         counter += 1
     
     if face_match:
-        cv2.putText(frame, "Face Match", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+        cv2.putText(frame, "Face Match", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
     else:
-        cv2.putText(frame, "No Face Match", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+        cv2.putText(frame, "No Face Match", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
 
     cv2.imshow("Frame", frame)
     
     key = cv2.waitKey(1)
     if key == ord("q"):
-        break
+        breakgit a
 
 cap.release()
 cv2.destroyAllWindows()
